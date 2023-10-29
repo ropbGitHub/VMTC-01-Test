@@ -1,0 +1,16 @@
+<div class="row">
+  <div *ngFor="let product of products" class="col-md-4 col-sm-6 animate__animated animate__fadeIn">
+    <div class="card">
+      <img [src]="product.image" [alt]="product.title" class="card-img-top">
+
+      <div class="card-body">
+
+        <p class="card-text">
+          {{product.title}}
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+</div>
